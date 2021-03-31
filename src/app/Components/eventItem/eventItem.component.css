@@ -1,0 +1,14 @@
+
+.mrg {
+    margin: 5px 10px
+}
+
+.icon{
+    cursor: pointer;
+    color: red;
+    margin-left: 10px;
+}
+.green-icon{
+    color: green;
+
+}

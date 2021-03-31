@@ -1,0 +1,5 @@
+.bord {
+    margin: 5px;
+    border: rgba(0, 0, 196, 0.774) solid 3px;
+    height: 500px;
+}
