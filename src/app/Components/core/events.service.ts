@@ -14,6 +14,12 @@ export class EventsService {
 
   changeEvents = new EventEmitter<boolean>();
 
+  addEvent(model: EventModel) {
+    this.events.push(new EventModel(model.title, model.description, model.date, model.image, false, false));
+    this.changeEvents.emit(true);
+    console.log("Succes added new event")
+  }
+
   getEvents():EventModel[]{
     return this.events; 
   }

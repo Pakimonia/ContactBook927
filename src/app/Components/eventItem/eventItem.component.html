@@ -10,6 +10,7 @@
     <i (click)="changePriority()" *ngIf="myEvent.isPriority === true" class="fas fa-check-square check fa-2x icon green-icon"></i>
     <i (click)="changeIsHidden()" *ngIf="myEvent.isHidden === false" class="fas fa-eye eye fa-2x "></i>
     <i (click)="changeIsHidden()" *ngIf="myEvent.isHidden === true" class="fas fa-eye-slash eye fa-2x "></i>
+    <i (click)="addNote()"  class="fas fa-plus fa-2x " style="color: rgb(71, 255, 47);"></i>
   </div>
   <div class="card-footer text-muted">
     {{myEvent.date}}

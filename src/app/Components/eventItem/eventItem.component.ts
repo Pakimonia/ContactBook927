@@ -27,4 +27,12 @@ export class EventItemComponent implements OnInit {
   changeIsHidden(): void{
     this.eventsService.changeIsHidden(this.myEvent.id);
   } 
+
+  addNote(){
+      var note = prompt("Enter note text", "") ;
+      if(note != null) {
+        this.myEvent.addNote(note);
+        console.log(note);
+      }
+  }
 }
