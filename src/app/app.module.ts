@@ -9,6 +9,8 @@ import { ListEventsComponent } from './Components/listEvents/listEvents.componen
 import { NavbarComponent } from './Components/Navbar/Navbar.component';
 import { AddEventComponent } from './Components/AddEvent/AddEvent.component';
 import { EventInfoComponent } from './Components/EventInfo/EventInfo.component';
+import { Page404Component } from './Components/Page404/Page404.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -17,11 +19,13 @@ import { EventInfoComponent } from './Components/EventInfo/EventInfo.component';
     ListEventsComponent,
     NavbarComponent,
     AddEventComponent,
-    EventInfoComponent
+    EventInfoComponent,
+    Page404Component
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

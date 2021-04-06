@@ -1,10 +1,10 @@
 
-<form #EventForm="ngForm" class="bord" (ngSubmit)="onSubmit(EventForm)">
-  <h5>Add Event</h5>
-  <input type="text" [(ngModel)]="model.title" name="txtTitle" id="txtTitle" placeholder="Title">
-  <input type="text" [(ngModel)]="model.description" name="txtDescription" id="txtDescription" placeholder="Description">
-  <input type="text" [(ngModel)]="model.image" name="txtImage" id="txtImage" placeholder="Image URL">
-  <input type="date" [(ngModel)]="model.date" name="txtDate" id="txtDate" placeholder="Date">
-  <p class="text-danger">{{errorMessage}}</p>
-  <input class="btn btn-primary" type="submit" value="Submit">
-</form>
+  <form #EventForm="ngForm" class="bord" style="margin: auto; width: 30%; " (ngSubmit)="onSubmit(EventForm)">
+    <h5>Add Event</h5>
+    <input type="text" [(ngModel)]="model.title" name="txtTitle" id="txtTitle" placeholder="Title">
+    <input type="text" [(ngModel)]="model.description" name="txtDescription" id="txtDescription" placeholder="Description">
+    <input type="text" [(ngModel)]="model.image" name="txtImage" id="txtImage" placeholder="Image URL">
+    <input type="date" [(ngModel)]="model.date" name="txtDate" id="txtDate" placeholder="Date">
+    <p class="text-danger">{{errorMessage}}</p>
+    <input class="btn btn-primary" type="submit" value="Submit">
+  </form>
